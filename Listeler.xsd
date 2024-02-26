@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Listeler" targetNamespace="http://tempuri.org/Listeler.xsd" xmlns:mstns="http://tempuri.org/Listeler.xsd" xmlns="http://tempuri.org/Listeler.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Cs" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Cs (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Blaser_ÖTV_Fatura_Irsaliye.Properties.Settings.GlobalReference.Default.Cs" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblFiyatListeleriTableAdapter" GeneratorDataComponentClassName="tblFiyatListeleriTableAdapter" Name="tblFiyatListeleri" UserDataComponentName="tblFiyatListeleriTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectName="YNS00006.YNS00006.STK007" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [STK007] ([STK007_FiyatListeNo], [STK007_FiyatListeKodu], [STK007_FiyatListeAdi], [STK007_MalKodu], [STK007_BasDate], [STK007_BitDate], [STK007_ListeTuru], [STK007_CHKodTipi], [STK007_CHKod], [STK007_SatisFiyat1], [STK007_SatisKDVFlag1], [STK007_SatisBirimi1], [STK007_SatisFiyat2], [STK007_SatisKDVFlag2], [STK007_SatisBirimi2], [STK007_SatisFiyat3], [STK007_SatisKDVFlag3], [STK007_SatisBirimi3], [STK007_SatisFiyat4], [STK007_SatisKDVFlag4], [STK007_SatisBirimi4], [STK007_SatisFiyat5], [STK007_SatisKDVFlag5], [STK007_SatisBirimi5], [STK007_AlisFiyat1], [STK007_AlisKDVFlag1], [STK007_AlisBirimi1], [STK007_AlisFiyat2], [STK007_AlisKDVFlag2], [STK007_AlisBirimi2], [STK007_AlisFiyat3], [STK007_AlisKDVFlag3], [STK007_AlisBirimi3], [STK007_AlisFiyat4], [STK007_AlisKDVFlag4], [STK007_AlisBirimi4], [STK007_AlisFiyat5], [STK007_AlisKDVFlag5], [STK007_AlisBirimi5], [STK007_GirKaynakNo], [STK007_GirDate], [STK007_GirTime], [STK007_GirKodu], [STK007_GirVers], [STK007_DegKaynakNo], [STK007_DegDate], [STK007_DegTime], [STK007_DegKodu], [STK007_DegVers], [STK007_SatisDoviz1], [STK007_SatisDovizCinsi1], [STK007_SatisDoviz2], [STK007_SatisDovizCinsi2], [STK007_SatisDoviz3], [STK007_SatisDovizCinsi3], [STK007_AlisDoviz1], [STK007_AlisDovizCinsi1], [STK007_AlisDoviz2], [STK007_AlisDovizCinsi2], [STK007_AlisDoviz3], [STK007_AlisDovizCinsi3], [STK007_ValorGun1], [STK007_ValorGun2], [STK007_ValorGun3], [STK007_ValorGun4], [STK007_ValorGun5], [STK007_DvzValorGun1], [STK007_DvzValorGun2], [STK007_DvzValorGun3]) VALUES (@STK007_FiyatListeNo, @STK007_FiyatListeKodu, @STK007_FiyatListeAdi, @STK007_MalKodu, @STK007_BasDate, @STK007_BitDate, @STK007_ListeTuru, @STK007_CHKodTipi, @STK007_CHKod, @STK007_SatisFiyat1, @STK007_SatisKDVFlag1, @STK007_SatisBirimi1, @STK007_SatisFiyat2, @STK007_SatisKDVFlag2, @STK007_SatisBirimi2, @STK007_SatisFiyat3, @STK007_SatisKDVFlag3, @STK007_SatisBirimi3, @STK007_SatisFiyat4, @STK007_SatisKDVFlag4, @STK007_SatisBirimi4, @STK007_SatisFiyat5, @STK007_SatisKDVFlag5, @STK007_SatisBirimi5, @STK007_AlisFiyat1, @STK007_AlisKDVFlag1, @STK007_AlisBirimi1, @STK007_AlisFiyat2, @STK007_AlisKDVFlag2, @STK007_AlisBirimi2, @STK007_AlisFiyat3, @STK007_AlisKDVFlag3, @STK007_AlisBirimi3, @STK007_AlisFiyat4, @STK007_AlisKDVFlag4, @STK007_AlisBirimi4, @STK007_AlisFiyat5, @STK007_AlisKDVFlag5, @STK007_AlisBirimi5, @STK007_GirKaynakNo, @STK007_GirDate, @STK007_GirTime, @STK007_GirKodu, @STK007_GirVers, @STK007_DegKaynakNo, @STK007_DegDate, @STK007_DegTime, @STK007_DegKodu, @STK007_DegVers, @STK007_SatisDoviz1, @STK007_SatisDovizCinsi1, @STK007_SatisDoviz2, @STK007_SatisDovizCinsi2, @STK007_SatisDoviz3, @STK007_SatisDovizCinsi3, @STK007_AlisDoviz1, @STK007_AlisDovizCinsi1, @STK007_AlisDoviz2, @STK007_AlisDovizCinsi2, @STK007_AlisDoviz3, @STK007_AlisDovizCinsi3, @STK007_ValorGun1, @STK007_ValorGun2, @STK007_ValorGun3, @STK007_ValorGun4, @STK007_ValorGun5, @STK007_DvzValorGun1, @STK007_DvzValorGun2, @STK007_DvzValorGun3)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_FiyatListeNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_FiyatListeNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_FiyatListeKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_FiyatListeKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_FiyatListeAdi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_FiyatListeAdi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_MalKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_MalKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_BasDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_BasDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_BitDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_BitDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ListeTuru" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ListeTuru" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_CHKodTipi" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_CHKodTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_CHKod" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_CHKod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisFiyat1" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisFiyat1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisKDVFlag1" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisKDVFlag1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisBirimi1" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisBirimi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisFiyat2" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisFiyat2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisKDVFlag2" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisKDVFlag2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisBirimi2" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisBirimi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisFiyat3" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisFiyat3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisKDVFlag3" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisKDVFlag3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisBirimi3" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisBirimi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisFiyat4" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisFiyat4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisKDVFlag4" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisKDVFlag4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisBirimi4" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisBirimi4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisFiyat5" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisFiyat5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisKDVFlag5" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisKDVFlag5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_SatisBirimi5" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_SatisBirimi5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisFiyat1" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisFiyat1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisKDVFlag1" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisKDVFlag1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisBirimi1" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisBirimi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisFiyat2" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisFiyat2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisKDVFlag2" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisKDVFlag2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisBirimi2" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisBirimi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisFiyat3" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisFiyat3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisKDVFlag3" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisKDVFlag3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisBirimi3" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisBirimi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisFiyat4" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisFiyat4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisKDVFlag4" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisKDVFlag4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisBirimi4" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisBirimi4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisFiyat5" Precision="23" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisFiyat5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisKDVFlag5" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisKDVFlag5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Byte" Direction="Input" ParameterName="@STK007_AlisBirimi5" Precision="0" ProviderType="TinyInt" Scale="0" Size="0" SourceColumn="STK007_AlisBirimi5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_GirKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_GirKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_GirDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_GirDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_GirTime" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_GirTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_GirKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_GirKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_GirVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_GirVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_DegKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_DegKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK007_DegDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK007_DegDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_DegTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_DegTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_DegKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_DegKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_DegVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_DegVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisDoviz1" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisDoviz1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_SatisDovizCinsi1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_SatisDovizCinsi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisDoviz2" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisDoviz2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_SatisDovizCinsi2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_SatisDovizCinsi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_SatisDoviz3" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_SatisDoviz3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_SatisDovizCinsi3" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_SatisDovizCinsi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisDoviz1" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisDoviz1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_AlisDovizCinsi1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_AlisDovizCinsi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisDoviz2" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisDoviz2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_AlisDovizCinsi2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_AlisDovizCinsi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK007_AlisDoviz3" Precision="17" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="STK007_AlisDoviz3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK007_AlisDovizCinsi3" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK007_AlisDovizCinsi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ValorGun1" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ValorGun1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ValorGun2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ValorGun2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ValorGun3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ValorGun3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ValorGun4" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ValorGun4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_ValorGun5" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_ValorGun5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_DvzValorGun1" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_DvzValorGun1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_DvzValorGun2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_DvzValorGun2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK007_DvzValorGun3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK007_DvzValorGun3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  STK007_FiyatListeNo, STK007_FiyatListeKodu, STK007_FiyatListeAdi, STK007_MalKodu, STK007_BasDate, STK007_BitDate, 
+                      STK007_ListeTuru, STK007_CHKodTipi, STK007_CHKod, STK007_SatisFiyat1, STK007_SatisKDVFlag1, STK007_SatisBirimi1, STK007_SatisFiyat2, 
+                      STK007_SatisKDVFlag2, STK007_SatisBirimi2, STK007_SatisFiyat3, STK007_SatisKDVFlag3, STK007_SatisBirimi3, STK007_SatisFiyat4, STK007_SatisKDVFlag4, 
+                      STK007_SatisBirimi4, STK007_SatisFiyat5, STK007_SatisKDVFlag5, STK007_SatisBirimi5, STK007_AlisFiyat1, STK007_AlisKDVFlag1, STK007_AlisBirimi1, 
+                      STK007_AlisFiyat2, STK007_AlisKDVFlag2, STK007_AlisBirimi2, STK007_AlisFiyat3, STK007_AlisKDVFlag3, STK007_AlisBirimi3, STK007_AlisFiyat4, 
+                      STK007_AlisKDVFlag4, STK007_AlisBirimi4, STK007_AlisFiyat5, STK007_AlisKDVFlag5, STK007_AlisBirimi5, STK007_GirKaynakNo, STK007_GirDate, 
+                      STK007_GirTime, STK007_GirKodu, STK007_GirVers, STK007_DegKaynakNo, STK007_DegDate, STK007_DegTime, STK007_DegKodu, STK007_DegVers, 
+                      STK007_SatisDoviz1, STK007_SatisDovizCinsi1, STK007_SatisDoviz2, STK007_SatisDovizCinsi2, STK007_SatisDoviz3, STK007_SatisDovizCinsi3, 
+                      STK007_AlisDoviz1, STK007_AlisDovizCinsi1, STK007_AlisDoviz2, STK007_AlisDovizCinsi2, STK007_AlisDoviz3, STK007_AlisDovizCinsi3, STK007_ValorGun1, 
+                      STK007_ValorGun2, STK007_ValorGun3, STK007_ValorGun4, STK007_ValorGun5, STK007_DvzValorGun1, STK007_DvzValorGun2, STK007_DvzValorGun3
+FROM         STK007</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="STK007_FiyatListeNo" DataSetColumn="STK007_FiyatListeNo" />
+              <Mapping SourceColumn="STK007_FiyatListeKodu" DataSetColumn="STK007_FiyatListeKodu" />
+              <Mapping SourceColumn="STK007_FiyatListeAdi" DataSetColumn="STK007_FiyatListeAdi" />
+              <Mapping SourceColumn="STK007_MalKodu" DataSetColumn="STK007_MalKodu" />
+              <Mapping SourceColumn="STK007_BasDate" DataSetColumn="STK007_BasDate" />
+              <Mapping SourceColumn="STK007_BitDate" DataSetColumn="STK007_BitDate" />
+              <Mapping SourceColumn="STK007_ListeTuru" DataSetColumn="STK007_ListeTuru" />
+              <Mapping SourceColumn="STK007_CHKodTipi" DataSetColumn="STK007_CHKodTipi" />
+              <Mapping SourceColumn="STK007_CHKod" DataSetColumn="STK007_CHKod" />
+              <Mapping SourceColumn="STK007_SatisFiyat1" DataSetColumn="STK007_SatisFiyat1" />
+              <Mapping SourceColumn="STK007_SatisKDVFlag1" DataSetColumn="STK007_SatisKDVFlag1" />
+              <Mapping SourceColumn="STK007_SatisBirimi1" DataSetColumn="STK007_SatisBirimi1" />
+              <Mapping SourceColumn="STK007_SatisFiyat2" DataSetColumn="STK007_SatisFiyat2" />
+              <Mapping SourceColumn="STK007_SatisKDVFlag2" DataSetColumn="STK007_SatisKDVFlag2" />
+              <Mapping SourceColumn="STK007_SatisBirimi2" DataSetColumn="STK007_SatisBirimi2" />
+              <Mapping SourceColumn="STK007_SatisFiyat3" DataSetColumn="STK007_SatisFiyat3" />
+              <Mapping SourceColumn="STK007_SatisKDVFlag3" DataSetColumn="STK007_SatisKDVFlag3" />
+              <Mapping SourceColumn="STK007_SatisBirimi3" DataSetColumn="STK007_SatisBirimi3" />
+              <Mapping SourceColumn="STK007_SatisFiyat4" DataSetColumn="STK007_SatisFiyat4" />
+              <Mapping SourceColumn="STK007_SatisKDVFlag4" DataSetColumn="STK007_SatisKDVFlag4" />
+              <Mapping SourceColumn="STK007_SatisBirimi4" DataSetColumn="STK007_SatisBirimi4" />
+              <Mapping SourceColumn="STK007_SatisFiyat5" DataSetColumn="STK007_SatisFiyat5" />
+              <Mapping SourceColumn="STK007_SatisKDVFlag5" DataSetColumn="STK007_SatisKDVFlag5" />
+              <Mapping SourceColumn="STK007_SatisBirimi5" DataSetColumn="STK007_SatisBirimi5" />
+              <Mapping SourceColumn="STK007_AlisFiyat1" DataSetColumn="STK007_AlisFiyat1" />
+              <Mapping SourceColumn="STK007_AlisKDVFlag1" DataSetColumn="STK007_AlisKDVFlag1" />
+              <Mapping SourceColumn="STK007_AlisBirimi1" DataSetColumn="STK007_AlisBirimi1" />
+              <Mapping SourceColumn="STK007_AlisFiyat2" DataSetColumn="STK007_AlisFiyat2" />
+              <Mapping SourceColumn="STK007_AlisKDVFlag2" DataSetColumn="STK007_AlisKDVFlag2" />
+              <Mapping SourceColumn="STK007_AlisBirimi2" DataSetColumn="STK007_AlisBirimi2" />
+              <Mapping SourceColumn="STK007_AlisFiyat3" DataSetColumn="STK007_AlisFiyat3" />
+              <Mapping SourceColumn="STK007_AlisKDVFlag3" DataSetColumn="STK007_AlisKDVFlag3" />
+              <Mapping SourceColumn="STK007_AlisBirimi3" DataSetColumn="STK007_AlisBirimi3" />
+              <Mapping SourceColumn="STK007_AlisFiyat4" DataSetColumn="STK007_AlisFiyat4" />
+              <Mapping SourceColumn="STK007_AlisKDVFlag4" DataSetColumn="STK007_AlisKDVFlag4" />
+              <Mapping SourceColumn="STK007_AlisBirimi4" DataSetColumn="STK007_AlisBirimi4" />
+              <Mapping SourceColumn="STK007_AlisFiyat5" DataSetColumn="STK007_AlisFiyat5" />
+              <Mapping SourceColumn="STK007_AlisKDVFlag5" DataSetColumn="STK007_AlisKDVFlag5" />
+              <Mapping SourceColumn="STK007_AlisBirimi5" DataSetColumn="STK007_AlisBirimi5" />
+              <Mapping SourceColumn="STK007_GirKaynakNo" DataSetColumn="STK007_GirKaynakNo" />
+              <Mapping SourceColumn="STK007_GirDate" DataSetColumn="STK007_GirDate" />
+              <Mapping SourceColumn="STK007_GirTime" DataSetColumn="STK007_GirTime" />
+              <Mapping SourceColumn="STK007_GirKodu" DataSetColumn="STK007_GirKodu" />
+              <Mapping SourceColumn="STK007_GirVers" DataSetColumn="STK007_GirVers" />
+              <Mapping SourceColumn="STK007_DegKaynakNo" DataSetColumn="STK007_DegKaynakNo" />
+              <Mapping SourceColumn="STK007_DegDate" DataSetColumn="STK007_DegDate" />
+              <Mapping SourceColumn="STK007_DegTime" DataSetColumn="STK007_DegTime" />
+              <Mapping SourceColumn="STK007_DegKodu" DataSetColumn="STK007_DegKodu" />
+              <Mapping SourceColumn="STK007_DegVers" DataSetColumn="STK007_DegVers" />
+              <Mapping SourceColumn="STK007_SatisDoviz1" DataSetColumn="STK007_SatisDoviz1" />
+              <Mapping SourceColumn="STK007_SatisDovizCinsi1" DataSetColumn="STK007_SatisDovizCinsi1" />
+              <Mapping SourceColumn="STK007_SatisDoviz2" DataSetColumn="STK007_SatisDoviz2" />
+              <Mapping SourceColumn="STK007_SatisDovizCinsi2" DataSetColumn="STK007_SatisDovizCinsi2" />
+              <Mapping SourceColumn="STK007_SatisDoviz3" DataSetColumn="STK007_SatisDoviz3" />
+              <Mapping SourceColumn="STK007_SatisDovizCinsi3" DataSetColumn="STK007_SatisDovizCinsi3" />
+              <Mapping SourceColumn="STK007_AlisDoviz1" DataSetColumn="STK007_AlisDoviz1" />
+              <Mapping SourceColumn="STK007_AlisDovizCinsi1" DataSetColumn="STK007_AlisDovizCinsi1" />
+              <Mapping SourceColumn="STK007_AlisDoviz2" DataSetColumn="STK007_AlisDoviz2" />
+              <Mapping SourceColumn="STK007_AlisDovizCinsi2" DataSetColumn="STK007_AlisDovizCinsi2" />
+              <Mapping SourceColumn="STK007_AlisDoviz3" DataSetColumn="STK007_AlisDoviz3" />
+              <Mapping SourceColumn="STK007_AlisDovizCinsi3" DataSetColumn="STK007_AlisDovizCinsi3" />
+              <Mapping SourceColumn="STK007_ValorGun1" DataSetColumn="STK007_ValorGun1" />
+              <Mapping SourceColumn="STK007_ValorGun2" DataSetColumn="STK007_ValorGun2" />
+              <Mapping SourceColumn="STK007_ValorGun3" DataSetColumn="STK007_ValorGun3" />
+              <Mapping SourceColumn="STK007_ValorGun4" DataSetColumn="STK007_ValorGun4" />
+              <Mapping SourceColumn="STK007_ValorGun5" DataSetColumn="STK007_ValorGun5" />
+              <Mapping SourceColumn="STK007_DvzValorGun1" DataSetColumn="STK007_DvzValorGun1" />
+              <Mapping SourceColumn="STK007_DvzValorGun2" DataSetColumn="STK007_DvzValorGun2" />
+              <Mapping SourceColumn="STK007_DvzValorGun3" DataSetColumn="STK007_DvzValorGun3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblKayitliListelerTableAdapter" GeneratorDataComponentClassName="tblKayitliListelerTableAdapter" Name="tblKayitliListeler" UserDataComponentName="tblKayitliListelerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ISNULL(STK007_FiyatListeNo,'') AS 'Fiyat Liste No',ISNULL(STK007_FiyatListeKodu,'') AS 'Fiyat Liste Kodu',
+ISNULL(STK007_FiyatListeAdi,'') AS 'Fiyat Liste Adı',CONVERT(DATETIME,STK007_BasDate-2) AS 'Başlangıç Tarihi',
+CONVERT(DATETIME,STK007_BitDate-2) AS 'Bitiş Tarihi' 
+FROM STK007
+GROUP BY STK007_FiyatListeNo,STK007_FiyatListeKodu,STK007_FiyatListeAdi,STK007_BasDate,STK007_BitDate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fiyat Liste No" DataSetColumn="Fiyat Liste No" />
+              <Mapping SourceColumn="Fiyat Liste Kodu" DataSetColumn="Fiyat Liste Kodu" />
+              <Mapping SourceColumn="Fiyat Liste Adı" DataSetColumn="Fiyat Liste Adı" />
+              <Mapping SourceColumn="Başlangıç Tarihi" DataSetColumn="Başlangıç Tarihi" />
+              <Mapping SourceColumn="Bitiş Tarihi" DataSetColumn="Bitiş Tarihi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblListeCariHesaplariTableAdapter" GeneratorDataComponentClassName="tblListeCariHesaplariTableAdapter" Name="tblListeCariHesaplari" UserDataComponentName="tblListeCariHesaplariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectName="YNS00006.YNS00006.CAR002" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [CAR002] ([CAR002_HesapKodu], [CAR002_Unvan1]) VALUES (@Hesap_Kodu, @Ünvanı)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hesap_Kodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hesap Kodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Ünvanı" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Ünvanı" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT CAR002_HesapKodu AS 'Hesap Kodu',CAR002_Unvan1 AS 'Ünvanı' FROM  CAR002</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Hesap Kodu" DataSetColumn="Hesap Kodu" />
+              <Mapping SourceColumn="Ünvanı" DataSetColumn="Ünvanı" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblListeMalKodlariTableAdapter" GeneratorDataComponentClassName="tblListeMalKodlariTableAdapter" Name="tblListeMalKodlari" UserDataComponentName="tblListeMalKodlariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectName="YNS00006.YNS00006.STK004" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [STK004] ([STK004_MalKodu], [STK004_Aciklama]) VALUES (@Mal_Kodu, @Mal_Adı)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Mal_Kodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mal Kodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Mal_Adı" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mal Adı" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT STK004_MalKodu AS 'Mal Kodu',STK004_Aciklama AS 'Mal Adı' FROM  STK004</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mal Kodu" DataSetColumn="Mal Kodu" />
+              <Mapping SourceColumn="Mal Adı" DataSetColumn="Mal Adı" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblListeBirimFiyatTableAdapter" GeneratorDataComponentClassName="tblListeBirimFiyatTableAdapter" Name="tblListeBirimFiyat" UserDataComponentName="tblListeBirimFiyatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectName="YNS00006.dbo.a_fn_FiyatListesiBirim" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="BirimFiyatGetir" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="BirimFiyatGetir" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="BirimFiyatGetir">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM dbo.a_fn_FiyatListesiBirim(@Fiyat,@ListeNo,@ListeAdi,@MalKodu,@HesapKodu,@Tarih)
+
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Fiyat" ColumnName="" DataSourceName="" DataTypeServer="varchar(120)" DbType="String" Direction="Input" ParameterName="@Fiyat" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ListeNo" ColumnName="" DataSourceName="" DataTypeServer="varchar(50)" DbType="String" Direction="Input" ParameterName="@ListeNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ListeAdi" ColumnName="" DataSourceName="" DataTypeServer="varchar(50)" DbType="String" Direction="Input" ParameterName="@ListeAdi" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="MalKodu" ColumnName="" DataSourceName="" DataTypeServer="varchar(150)" DbType="String" Direction="Input" ParameterName="@MalKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="HesapKodu" ColumnName="" DataSourceName="" DataTypeServer="varchar(150)" DbType="String" Direction="Input" ParameterName="@HesapKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="1024" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Tarih" ColumnName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Tarih" Precision="0" Scale="0" Size="0" SourceColumn="" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BirimFiyati" DataSetColumn="BirimFiyati" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbliskontoListesiTableAdapter" GeneratorDataComponentClassName="tbliskontoListesiTableAdapter" Name="tbliskontoListesi" UserDataComponentName="tbliskontoListesiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Cs (Settings)" DbObjectName="YNS00006.YNS00006.STK008" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Fill" GenerateShortCommands="false" GeneratorSourceName="Fill" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [STK008] ([STK008_MalKoduTipi], [STK008_MalKodu], [STK008_BasDate], [STK008_BitDate], [STK008_IndTuru], [STK008_IndCHKodTipi], [STK008_IndCHKod], [STK008_IndOrani], [STK008_GirKaynakNo], [STK008_GirDate], [STK008_GirTime], [STK008_GirKodu], [STK008_GirVers], [STK008_DegKaynakNo], [STK008_DegDate], [STK008_DegTime], [STK008_DegKodu], [STK008_DegVers]) VALUES (@STK008_MalKoduTipi, @STK008_MalKodu, @STK008_BasDate, @STK008_BitDate, @STK008_IndTuru, @STK008_IndCHKodTipi, @STK008_IndCHKod, @STK008_IndOrani, @STK008_GirKaynakNo, @STK008_GirDate, @STK008_GirTime, @STK008_GirKodu, @STK008_GirVers, @STK008_DegKaynakNo, @STK008_DegDate, @STK008_DegTime, @STK008_DegKodu, @STK008_DegVers)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK008_MalKoduTipi" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK008_MalKoduTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_MalKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_MalKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK008_BasDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK008_BasDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK008_BitDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK008_BitDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK008_IndTuru" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK008_IndTuru" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@STK008_IndCHKodTipi" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="STK008_IndCHKodTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_IndCHKod" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_IndCHKod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@STK008_IndOrani" Precision="4" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="STK008_IndOrani" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_GirKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_GirKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK008_GirDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK008_GirDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_GirTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_GirTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_GirKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_GirKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_GirVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_GirVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_DegKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_DegKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@STK008_DegDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="STK008_DegDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_DegTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_DegTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_DegKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_DegKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STK008_DegVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STK008_DegVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     STK008_MalKoduTipi, STK008_MalKodu, STK008_BasDate, STK008_BitDate, STK008_IndTuru, STK008_IndCHKodTipi, STK008_IndCHKod, STK008_IndOrani, 
+                      STK008_GirKaynakNo, STK008_GirDate, STK008_GirTime, STK008_GirKodu, STK008_GirVers, STK008_DegKaynakNo, STK008_DegDate, STK008_DegTime, 
+                      STK008_DegKodu, STK008_DegVers
+FROM         STK008</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="STK008_MalKoduTipi" DataSetColumn="STK008_MalKoduTipi" />
+              <Mapping SourceColumn="STK008_MalKodu" DataSetColumn="STK008_MalKodu" />
+              <Mapping SourceColumn="STK008_BasDate" DataSetColumn="STK008_BasDate" />
+              <Mapping SourceColumn="STK008_BitDate" DataSetColumn="STK008_BitDate" />
+              <Mapping SourceColumn="STK008_IndTuru" DataSetColumn="STK008_IndTuru" />
+              <Mapping SourceColumn="STK008_IndCHKodTipi" DataSetColumn="STK008_IndCHKodTipi" />
+              <Mapping SourceColumn="STK008_IndCHKod" DataSetColumn="STK008_IndCHKod" />
+              <Mapping SourceColumn="STK008_IndOrani" DataSetColumn="STK008_IndOrani" />
+              <Mapping SourceColumn="STK008_GirKaynakNo" DataSetColumn="STK008_GirKaynakNo" />
+              <Mapping SourceColumn="STK008_GirDate" DataSetColumn="STK008_GirDate" />
+              <Mapping SourceColumn="STK008_GirTime" DataSetColumn="STK008_GirTime" />
+              <Mapping SourceColumn="STK008_GirKodu" DataSetColumn="STK008_GirKodu" />
+              <Mapping SourceColumn="STK008_GirVers" DataSetColumn="STK008_GirVers" />
+              <Mapping SourceColumn="STK008_DegKaynakNo" DataSetColumn="STK008_DegKaynakNo" />
+              <Mapping SourceColumn="STK008_DegDate" DataSetColumn="STK008_DegDate" />
+              <Mapping SourceColumn="STK008_DegTime" DataSetColumn="STK008_DegTime" />
+              <Mapping SourceColumn="STK008_DegKodu" DataSetColumn="STK008_DegKodu" />
+              <Mapping SourceColumn="STK008_DegVers" DataSetColumn="STK008_DegVers" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources>
+          <DbSource ConnectionRef="Cs (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="FiyatListesiEkle" MethodsParameterType="CLR" Modifier="Public" Name="FiyatListesiEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FiyatListesiEkle">
+            <InsertCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>INSERT INTO STK007(STK007_FiyatListeNo, STK007_FiyatListeKodu, STK007_FiyatListeAdi, STK007_MalKodu, STK007_BasDate, STK007_BitDate, STK007_ListeTuru, 
+                      STK007_CHKodTipi, STK007_CHKod, STK007_SatisFiyat1, STK007_SatisKDVFlag1, STK007_SatisFiyat2, STK007_SatisKDVFlag2, STK007_SatisFiyat3, 
+                      STK007_SatisKDVFlag3, STK007_SatisFiyat4, STK007_SatisKDVFlag4, STK007_SatisFiyat5, STK007_SatisKDVFlag5, STK007_AlisFiyat1, STK007_AlisKDVFlag1, 
+                      STK007_AlisFiyat2, STK007_AlisKDVFlag2, STK007_AlisFiyat3, STK007_AlisKDVFlag3, STK007_AlisFiyat4, STK007_AlisKDVFlag4, STK007_AlisFiyat5, 
+                      STK007_AlisKDVFlag5, STK007_GirKaynakNo, STK007_GirDate, STK007_GirTime, STK007_GirKodu, STK007_GirVers, STK007_DegKaynakNo, STK007_DegDate, 
+                      STK007_DegTime, STK007_DegKodu, STK007_DegVers, STK007_SatisDoviz1, STK007_SatisDovizCinsi1, STK007_SatisDoviz2, STK007_SatisDovizCinsi2, 
+                      STK007_SatisDoviz3, STK007_SatisDovizCinsi3, STK007_AlisDoviz1, STK007_AlisDovizCinsi1, STK007_AlisDoviz2, STK007_AlisDovizCinsi2, STK007_AlisDoviz3, 
+                      STK007_AlisDovizCinsi3)
+VALUES     (@FiyatListeNo,@FiyatListeKodu,@FiyatListeAdi,@MalKodu,@BasDate,@BitDate,@ListeTuru,@CHKodTipi,@CHKod,@SatisFiyat1, 0,@SatisFiyat2, 0,@SatisFiyat3, 
+                      0,@SatisFiyat4, 0,@SatisFiyat5, 0,@AlisFiyat1, 0,@AlisFiyat2, 0,@AlisFiyat3, 0,@AlisFiyat4, 0,@AlisFiyat5, 0, N'Y4099',@GirDate,@GirTime,@GirKodu, N'6.1.00', 
+                      N'Y4099',@DegDate,@DegTime,@DegKodu, 
+                      N'6.1.00',@SatisDoviz1,@SatisDovizCinsi1,@SatisDoviz2,@SatisDovizCinsi2,@SatisDoviz3,@SatisDovizCinsi3,@AlisDoviz1,@AlisDovizCinsi1,@AlisDoviz2,@AlisDovizCinsi2,@AlisDoviz3,@AlisDovizCinsi3)</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="FiyatListeNo" ColumnName="STK007_FiyatListeNo" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@FiyatListeNo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_FiyatListeNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="FiyatListeKodu" ColumnName="STK007_FiyatListeKodu" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(5)" DbType="String" Direction="Input" ParameterName="@FiyatListeKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="5" SourceColumn="STK007_FiyatListeKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="FiyatListeAdi" ColumnName="STK007_FiyatListeAdi" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(30)" DbType="String" Direction="Input" ParameterName="@FiyatListeAdi" Precision="0" ProviderType="NVarChar" Scale="0" Size="30" SourceColumn="STK007_FiyatListeAdi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="MalKodu" ColumnName="STK007_MalKodu" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(30)" DbType="String" Direction="Input" ParameterName="@MalKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="30" SourceColumn="STK007_MalKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="BasDate" ColumnName="STK007_BasDate" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@BasDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_BasDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="BitDate" ColumnName="STK007_BitDate" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@BitDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_BitDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="ListeTuru" ColumnName="STK007_ListeTuru" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="smallint" DbType="Int32" Direction="Input" ParameterName="@ListeTuru" Precision="0" ProviderType="Int" Scale="0" Size="2" SourceColumn="STK007_ListeTuru" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="CHKodTipi" ColumnName="STK007_CHKodTipi" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="smallint" DbType="Int32" Direction="Input" ParameterName="@CHKodTipi" Precision="0" ProviderType="Int" Scale="0" Size="2" SourceColumn="STK007_CHKodTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="CHKod" ColumnName="STK007_CHKod" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@CHKod" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="STK007_CHKod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisFiyat1" ColumnName="STK007_SatisFiyat1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisFiyat1" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_SatisFiyat1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisFiyat2" ColumnName="STK007_SatisFiyat2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisFiyat2" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_SatisFiyat2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisFiyat3" ColumnName="STK007_SatisFiyat3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisFiyat3" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_SatisFiyat3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisFiyat4" ColumnName="STK007_SatisFiyat4" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisFiyat4" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_SatisFiyat4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisFiyat5" ColumnName="STK007_SatisFiyat5" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisFiyat5" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_SatisFiyat5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisFiyat1" ColumnName="STK007_AlisFiyat1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisFiyat1" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_AlisFiyat1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisFiyat2" ColumnName="STK007_AlisFiyat2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisFiyat2" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_AlisFiyat2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisFiyat3" ColumnName="STK007_AlisFiyat3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisFiyat3" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_AlisFiyat3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisFiyat4" ColumnName="STK007_AlisFiyat4" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisFiyat4" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_AlisFiyat4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisFiyat5" ColumnName="STK007_AlisFiyat5" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(23, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisFiyat5" Precision="23" ProviderType="Decimal" Scale="6" Size="13" SourceColumn="STK007_AlisFiyat5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirDate" ColumnName="STK007_GirDate" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@GirDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_GirDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirTime" ColumnName="STK007_GirTime" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@GirTime" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_GirTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirKodu" ColumnName="STK007_GirKodu" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(10)" DbType="String" Direction="Input" ParameterName="@GirKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="10" SourceColumn="STK007_GirKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegDate" ColumnName="STK007_DegDate" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DegDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK007_DegDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegTime" ColumnName="STK007_DegTime" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(8)" DbType="String" Direction="Input" ParameterName="@DegTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="8" SourceColumn="STK007_DegTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegKodu" ColumnName="STK007_DegKodu" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(10)" DbType="String" Direction="Input" ParameterName="@DegKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="10" SourceColumn="STK007_DegKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDoviz1" ColumnName="STK007_SatisDoviz1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisDoviz1" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_SatisDoviz1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDovizCinsi1" ColumnName="STK007_SatisDovizCinsi1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@SatisDovizCinsi1" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_SatisDovizCinsi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDoviz2" ColumnName="STK007_SatisDoviz2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisDoviz2" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_SatisDoviz2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDovizCinsi2" ColumnName="STK007_SatisDovizCinsi2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@SatisDovizCinsi2" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_SatisDovizCinsi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDoviz3" ColumnName="STK007_SatisDoviz3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@SatisDoviz3" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_SatisDoviz3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="SatisDovizCinsi3" ColumnName="STK007_SatisDovizCinsi3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@SatisDovizCinsi3" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_SatisDovizCinsi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDoviz1" ColumnName="STK007_AlisDoviz1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisDoviz1" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_AlisDoviz1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDovizCinsi1" ColumnName="STK007_AlisDovizCinsi1" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@AlisDovizCinsi1" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_AlisDovizCinsi1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDoviz2" ColumnName="STK007_AlisDoviz2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisDoviz2" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_AlisDoviz2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDovizCinsi2" ColumnName="STK007_AlisDovizCinsi2" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@AlisDovizCinsi2" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_AlisDovizCinsi2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDoviz3" ColumnName="STK007_AlisDoviz3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="numeric(17, 6)" DbType="Decimal" Direction="Input" ParameterName="@AlisDoviz3" Precision="17" ProviderType="Decimal" Scale="6" Size="9" SourceColumn="STK007_AlisDoviz3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="AlisDovizCinsi3" ColumnName="STK007_AlisDovizCinsi3" DataSourceName="YNS00006.YNS00006.STK007" DataTypeServer="nvarchar(3)" DbType="String" Direction="Input" ParameterName="@AlisDovizCinsi3" Precision="0" ProviderType="NVarChar" Scale="0" Size="3" SourceColumn="STK007_AlisDovizCinsi3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </InsertCommand>
+          </DbSource>
+          <DbSource ConnectionRef="Cs (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="IskontoListesiEkle" MethodsParameterType="CLR" Modifier="Public" Name="IskontoListesiEkle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="IskontoListesiEkle">
+            <InsertCommand>
+              <DbCommand CommandType="Text" ModifiedByUser="true">
+                <CommandText>INSERT INTO STK008
+                         (STK008_MalKoduTipi, STK008_MalKodu, STK008_BasDate, STK008_BitDate, STK008_IndTuru, STK008_IndCHKodTipi, STK008_IndCHKod, STK008_IndOrani, 
+                         STK008_GirKaynakNo, STK008_GirDate, STK008_GirTime, STK008_GirKodu, STK008_GirVers, STK008_DegKaynakNo, STK008_DegDate, STK008_DegTime, 
+                         STK008_DegKodu, STK008_DegVers)
+VALUES        (@MalKoduTipi,@MalKodu,@BasDate,@BitDate,@IndTuru,@IndCHKodTipi,@IndCHKod,@IndOrani,@GirKaynakNo,@GirDate,@GirTime,@GirKodu,@GirVers,@DegKaynakNo,@DegDate,@DegTime,@DegKodu,@DegVers)</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="MalKoduTipi" ColumnName="STK008_MalKoduTipi" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="smallint" DbType="Int32" Direction="Input" ParameterName="@MalKoduTipi" Precision="0" ProviderType="Int" Scale="0" Size="2" SourceColumn="STK008_MalKoduTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="MalKodu" ColumnName="STK008_MalKodu" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(30)" DbType="String" Direction="Input" ParameterName="@MalKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="30" SourceColumn="STK008_MalKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="BasDate" ColumnName="STK008_BasDate" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@BasDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK008_BasDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="BitDate" ColumnName="STK008_BitDate" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@BitDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK008_BitDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="IndTuru" ColumnName="STK008_IndTuru" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="smallint" DbType="Int32" Direction="Input" ParameterName="@IndTuru" Precision="0" ProviderType="Int" Scale="0" Size="2" SourceColumn="STK008_IndTuru" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="IndCHKodTipi" ColumnName="STK008_IndCHKodTipi" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="smallint" DbType="Int32" Direction="Input" ParameterName="@IndCHKodTipi" Precision="0" ProviderType="Int" Scale="0" Size="2" SourceColumn="STK008_IndCHKodTipi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="IndCHKod" ColumnName="STK008_IndCHKod" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@IndCHKod" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="STK008_IndCHKod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="IndOrani" ColumnName="STK008_IndOrani" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="numeric(4, 2)" DbType="Decimal" Direction="Input" ParameterName="@IndOrani" Precision="4" ProviderType="Decimal" Scale="2" Size="5" SourceColumn="STK008_IndOrani" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirKaynakNo" ColumnName="STK008_GirKaynakNo" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(5)" DbType="String" Direction="Input" ParameterName="@GirKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="5" SourceColumn="STK008_GirKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirDate" ColumnName="STK008_GirDate" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@GirDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK008_GirDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirTime" ColumnName="STK008_GirTime" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(8)" DbType="String" Direction="Input" ParameterName="@GirTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="8" SourceColumn="STK008_GirTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirKodu" ColumnName="STK008_GirKodu" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(10)" DbType="String" Direction="Input" ParameterName="@GirKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="10" SourceColumn="STK008_GirKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="GirVers" ColumnName="STK008_GirVers" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(8)" DbType="String" Direction="Input" ParameterName="@GirVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="8" SourceColumn="STK008_GirVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegKaynakNo" ColumnName="STK008_DegKaynakNo" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(5)" DbType="String" Direction="Input" ParameterName="@DegKaynakNo" Precision="0" ProviderType="NVarChar" Scale="0" Size="5" SourceColumn="STK008_DegKaynakNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegDate" ColumnName="STK008_DegDate" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@DegDate" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="STK008_DegDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegTime" ColumnName="STK008_DegTime" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(8)" DbType="String" Direction="Input" ParameterName="@DegTime" Precision="0" ProviderType="NVarChar" Scale="0" Size="8" SourceColumn="STK008_DegTime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegKodu" ColumnName="STK008_DegKodu" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(10)" DbType="String" Direction="Input" ParameterName="@DegKodu" Precision="0" ProviderType="NVarChar" Scale="0" Size="10" SourceColumn="STK008_DegKodu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="DegVers" ColumnName="STK008_DegVers" DataSourceName="YNS00006.YNS00006.STK008" DataTypeServer="nvarchar(8)" DbType="String" Direction="Input" ParameterName="@DegVers" Precision="0" ProviderType="NVarChar" Scale="0" Size="8" SourceColumn="STK008_DegVers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </InsertCommand>
+          </DbSource>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Listeler" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Listeler" msprop:Generator_UserDSName="Listeler">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblFiyatListeleri" msprop:Generator_TableClassName="tblFiyatListeleriDataTable" msprop:Generator_TableVarName="tabletblFiyatListeleri" msprop:Generator_RowChangedName="tblFiyatListeleriRowChanged" msprop:Generator_TablePropName="tblFiyatListeleri" msprop:Generator_RowDeletingName="tblFiyatListeleriRowDeleting" msprop:Generator_RowChangingName="tblFiyatListeleriRowChanging" msprop:Generator_RowEvHandlerName="tblFiyatListeleriRowChangeEventHandler" msprop:Generator_RowDeletedName="tblFiyatListeleriRowDeleted" msprop:Generator_RowClassName="tblFiyatListeleriRow" msprop:Generator_UserTableName="tblFiyatListeleri" msprop:Generator_RowEvArgName="tblFiyatListeleriRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STK007_FiyatListeNo" msprop:Generator_ColumnVarNameInTable="columnSTK007_FiyatListeNo" msprop:Generator_ColumnPropNameInRow="STK007_FiyatListeNo" msprop:Generator_ColumnPropNameInTable="STK007_FiyatListeNoColumn" msprop:Generator_UserColumnName="STK007_FiyatListeNo" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_FiyatListeKodu" msprop:Generator_ColumnVarNameInTable="columnSTK007_FiyatListeKodu" msprop:Generator_ColumnPropNameInRow="STK007_FiyatListeKodu" msprop:Generator_ColumnPropNameInTable="STK007_FiyatListeKoduColumn" msprop:Generator_UserColumnName="STK007_FiyatListeKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_FiyatListeAdi" msprop:Generator_ColumnVarNameInTable="columnSTK007_FiyatListeAdi" msprop:Generator_ColumnPropNameInRow="STK007_FiyatListeAdi" msprop:Generator_ColumnPropNameInTable="STK007_FiyatListeAdiColumn" msprop:Generator_UserColumnName="STK007_FiyatListeAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_MalKodu" msprop:Generator_ColumnVarNameInTable="columnSTK007_MalKodu" msprop:Generator_ColumnPropNameInRow="STK007_MalKodu" msprop:Generator_ColumnPropNameInTable="STK007_MalKoduColumn" msprop:Generator_UserColumnName="STK007_MalKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_BasDate" msprop:Generator_ColumnVarNameInTable="columnSTK007_BasDate" msprop:Generator_ColumnPropNameInRow="STK007_BasDate" msprop:Generator_ColumnPropNameInTable="STK007_BasDateColumn" msprop:Generator_UserColumnName="STK007_BasDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_BitDate" msprop:Generator_ColumnVarNameInTable="columnSTK007_BitDate" msprop:Generator_ColumnPropNameInRow="STK007_BitDate" msprop:Generator_ColumnPropNameInTable="STK007_BitDateColumn" msprop:Generator_UserColumnName="STK007_BitDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_ListeTuru" msprop:Generator_ColumnVarNameInTable="columnSTK007_ListeTuru" msprop:Generator_ColumnPropNameInRow="STK007_ListeTuru" msprop:Generator_ColumnPropNameInTable="STK007_ListeTuruColumn" msprop:Generator_UserColumnName="STK007_ListeTuru" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_CHKodTipi" msprop:Generator_ColumnVarNameInTable="columnSTK007_CHKodTipi" msprop:Generator_ColumnPropNameInRow="STK007_CHKodTipi" msprop:Generator_ColumnPropNameInTable="STK007_CHKodTipiColumn" msprop:Generator_UserColumnName="STK007_CHKodTipi" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_CHKod" msprop:Generator_ColumnVarNameInTable="columnSTK007_CHKod" msprop:Generator_ColumnPropNameInRow="STK007_CHKod" msprop:Generator_ColumnPropNameInTable="STK007_CHKodColumn" msprop:Generator_UserColumnName="STK007_CHKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_SatisFiyat1" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisFiyat1" msprop:Generator_ColumnPropNameInRow="STK007_SatisFiyat1" msprop:Generator_ColumnPropNameInTable="STK007_SatisFiyat1Column" msprop:Generator_UserColumnName="STK007_SatisFiyat1" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisKDVFlag1" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisKDVFlag1" msprop:Generator_ColumnPropNameInRow="STK007_SatisKDVFlag1" msprop:Generator_ColumnPropNameInTable="STK007_SatisKDVFlag1Column" msprop:Generator_UserColumnName="STK007_SatisKDVFlag1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisBirimi1" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisBirimi1" msprop:Generator_ColumnPropNameInRow="STK007_SatisBirimi1" msprop:Generator_ColumnPropNameInTable="STK007_SatisBirimi1Column" msprop:Generator_UserColumnName="STK007_SatisBirimi1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisFiyat2" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisFiyat2" msprop:Generator_ColumnPropNameInRow="STK007_SatisFiyat2" msprop:Generator_ColumnPropNameInTable="STK007_SatisFiyat2Column" msprop:Generator_UserColumnName="STK007_SatisFiyat2" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisKDVFlag2" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisKDVFlag2" msprop:Generator_ColumnPropNameInRow="STK007_SatisKDVFlag2" msprop:Generator_ColumnPropNameInTable="STK007_SatisKDVFlag2Column" msprop:Generator_UserColumnName="STK007_SatisKDVFlag2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisBirimi2" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisBirimi2" msprop:Generator_ColumnPropNameInRow="STK007_SatisBirimi2" msprop:Generator_ColumnPropNameInTable="STK007_SatisBirimi2Column" msprop:Generator_UserColumnName="STK007_SatisBirimi2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisFiyat3" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisFiyat3" msprop:Generator_ColumnPropNameInRow="STK007_SatisFiyat3" msprop:Generator_ColumnPropNameInTable="STK007_SatisFiyat3Column" msprop:Generator_UserColumnName="STK007_SatisFiyat3" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisKDVFlag3" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisKDVFlag3" msprop:Generator_ColumnPropNameInRow="STK007_SatisKDVFlag3" msprop:Generator_ColumnPropNameInTable="STK007_SatisKDVFlag3Column" msprop:Generator_UserColumnName="STK007_SatisKDVFlag3" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisBirimi3" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisBirimi3" msprop:Generator_ColumnPropNameInRow="STK007_SatisBirimi3" msprop:Generator_ColumnPropNameInTable="STK007_SatisBirimi3Column" msprop:Generator_UserColumnName="STK007_SatisBirimi3" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisFiyat4" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisFiyat4" msprop:Generator_ColumnPropNameInRow="STK007_SatisFiyat4" msprop:Generator_ColumnPropNameInTable="STK007_SatisFiyat4Column" msprop:Generator_UserColumnName="STK007_SatisFiyat4" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisKDVFlag4" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisKDVFlag4" msprop:Generator_ColumnPropNameInRow="STK007_SatisKDVFlag4" msprop:Generator_ColumnPropNameInTable="STK007_SatisKDVFlag4Column" msprop:Generator_UserColumnName="STK007_SatisKDVFlag4" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisBirimi4" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisBirimi4" msprop:Generator_ColumnPropNameInRow="STK007_SatisBirimi4" msprop:Generator_ColumnPropNameInTable="STK007_SatisBirimi4Column" msprop:Generator_UserColumnName="STK007_SatisBirimi4" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisFiyat5" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisFiyat5" msprop:Generator_ColumnPropNameInRow="STK007_SatisFiyat5" msprop:Generator_ColumnPropNameInTable="STK007_SatisFiyat5Column" msprop:Generator_UserColumnName="STK007_SatisFiyat5" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisKDVFlag5" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisKDVFlag5" msprop:Generator_ColumnPropNameInRow="STK007_SatisKDVFlag5" msprop:Generator_ColumnPropNameInTable="STK007_SatisKDVFlag5Column" msprop:Generator_UserColumnName="STK007_SatisKDVFlag5" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_SatisBirimi5" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisBirimi5" msprop:Generator_ColumnPropNameInRow="STK007_SatisBirimi5" msprop:Generator_ColumnPropNameInTable="STK007_SatisBirimi5Column" msprop:Generator_UserColumnName="STK007_SatisBirimi5" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisFiyat1" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisFiyat1" msprop:Generator_ColumnPropNameInRow="STK007_AlisFiyat1" msprop:Generator_ColumnPropNameInTable="STK007_AlisFiyat1Column" msprop:Generator_UserColumnName="STK007_AlisFiyat1" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisKDVFlag1" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisKDVFlag1" msprop:Generator_ColumnPropNameInRow="STK007_AlisKDVFlag1" msprop:Generator_ColumnPropNameInTable="STK007_AlisKDVFlag1Column" msprop:Generator_UserColumnName="STK007_AlisKDVFlag1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisBirimi1" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisBirimi1" msprop:Generator_ColumnPropNameInRow="STK007_AlisBirimi1" msprop:Generator_ColumnPropNameInTable="STK007_AlisBirimi1Column" msprop:Generator_UserColumnName="STK007_AlisBirimi1" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisFiyat2" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisFiyat2" msprop:Generator_ColumnPropNameInRow="STK007_AlisFiyat2" msprop:Generator_ColumnPropNameInTable="STK007_AlisFiyat2Column" msprop:Generator_UserColumnName="STK007_AlisFiyat2" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisKDVFlag2" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisKDVFlag2" msprop:Generator_ColumnPropNameInRow="STK007_AlisKDVFlag2" msprop:Generator_ColumnPropNameInTable="STK007_AlisKDVFlag2Column" msprop:Generator_UserColumnName="STK007_AlisKDVFlag2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisBirimi2" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisBirimi2" msprop:Generator_ColumnPropNameInRow="STK007_AlisBirimi2" msprop:Generator_ColumnPropNameInTable="STK007_AlisBirimi2Column" msprop:Generator_UserColumnName="STK007_AlisBirimi2" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisFiyat3" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisFiyat3" msprop:Generator_ColumnPropNameInRow="STK007_AlisFiyat3" msprop:Generator_ColumnPropNameInTable="STK007_AlisFiyat3Column" msprop:Generator_UserColumnName="STK007_AlisFiyat3" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisKDVFlag3" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisKDVFlag3" msprop:Generator_ColumnPropNameInRow="STK007_AlisKDVFlag3" msprop:Generator_ColumnPropNameInTable="STK007_AlisKDVFlag3Column" msprop:Generator_UserColumnName="STK007_AlisKDVFlag3" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisBirimi3" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisBirimi3" msprop:Generator_ColumnPropNameInRow="STK007_AlisBirimi3" msprop:Generator_ColumnPropNameInTable="STK007_AlisBirimi3Column" msprop:Generator_UserColumnName="STK007_AlisBirimi3" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisFiyat4" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisFiyat4" msprop:Generator_ColumnPropNameInRow="STK007_AlisFiyat4" msprop:Generator_ColumnPropNameInTable="STK007_AlisFiyat4Column" msprop:Generator_UserColumnName="STK007_AlisFiyat4" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisKDVFlag4" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisKDVFlag4" msprop:Generator_ColumnPropNameInRow="STK007_AlisKDVFlag4" msprop:Generator_ColumnPropNameInTable="STK007_AlisKDVFlag4Column" msprop:Generator_UserColumnName="STK007_AlisKDVFlag4" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisBirimi4" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisBirimi4" msprop:Generator_ColumnPropNameInRow="STK007_AlisBirimi4" msprop:Generator_ColumnPropNameInTable="STK007_AlisBirimi4Column" msprop:Generator_UserColumnName="STK007_AlisBirimi4" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisFiyat5" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisFiyat5" msprop:Generator_ColumnPropNameInRow="STK007_AlisFiyat5" msprop:Generator_ColumnPropNameInTable="STK007_AlisFiyat5Column" msprop:Generator_UserColumnName="STK007_AlisFiyat5" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisKDVFlag5" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisKDVFlag5" msprop:Generator_ColumnPropNameInRow="STK007_AlisKDVFlag5" msprop:Generator_ColumnPropNameInTable="STK007_AlisKDVFlag5Column" msprop:Generator_UserColumnName="STK007_AlisKDVFlag5" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_AlisBirimi5" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisBirimi5" msprop:Generator_ColumnPropNameInRow="STK007_AlisBirimi5" msprop:Generator_ColumnPropNameInTable="STK007_AlisBirimi5Column" msprop:Generator_UserColumnName="STK007_AlisBirimi5" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="STK007_GirKaynakNo" msprop:Generator_ColumnVarNameInTable="columnSTK007_GirKaynakNo" msprop:Generator_ColumnPropNameInRow="STK007_GirKaynakNo" msprop:Generator_ColumnPropNameInTable="STK007_GirKaynakNoColumn" msprop:Generator_UserColumnName="STK007_GirKaynakNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_GirDate" msprop:Generator_ColumnVarNameInTable="columnSTK007_GirDate" msprop:Generator_ColumnPropNameInRow="STK007_GirDate" msprop:Generator_ColumnPropNameInTable="STK007_GirDateColumn" msprop:Generator_UserColumnName="STK007_GirDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_GirTime" msprop:Generator_ColumnVarNameInTable="columnSTK007_GirTime" msprop:Generator_ColumnPropNameInRow="STK007_GirTime" msprop:Generator_ColumnPropNameInTable="STK007_GirTimeColumn" msprop:Generator_UserColumnName="STK007_GirTime" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_GirKodu" msprop:Generator_ColumnVarNameInTable="columnSTK007_GirKodu" msprop:Generator_ColumnPropNameInRow="STK007_GirKodu" msprop:Generator_ColumnPropNameInTable="STK007_GirKoduColumn" msprop:Generator_UserColumnName="STK007_GirKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_GirVers" msprop:Generator_ColumnVarNameInTable="columnSTK007_GirVers" msprop:Generator_ColumnPropNameInRow="STK007_GirVers" msprop:Generator_ColumnPropNameInTable="STK007_GirVersColumn" msprop:Generator_UserColumnName="STK007_GirVers" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_DegKaynakNo" msprop:Generator_ColumnVarNameInTable="columnSTK007_DegKaynakNo" msprop:Generator_ColumnPropNameInRow="STK007_DegKaynakNo" msprop:Generator_ColumnPropNameInTable="STK007_DegKaynakNoColumn" msprop:Generator_UserColumnName="STK007_DegKaynakNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_DegDate" msprop:Generator_ColumnVarNameInTable="columnSTK007_DegDate" msprop:Generator_ColumnPropNameInRow="STK007_DegDate" msprop:Generator_ColumnPropNameInTable="STK007_DegDateColumn" msprop:Generator_UserColumnName="STK007_DegDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK007_DegTime" msprop:Generator_ColumnVarNameInTable="columnSTK007_DegTime" msprop:Generator_ColumnPropNameInRow="STK007_DegTime" msprop:Generator_ColumnPropNameInTable="STK007_DegTimeColumn" msprop:Generator_UserColumnName="STK007_DegTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_DegKodu" msprop:Generator_ColumnVarNameInTable="columnSTK007_DegKodu" msprop:Generator_ColumnPropNameInRow="STK007_DegKodu" msprop:Generator_ColumnPropNameInTable="STK007_DegKoduColumn" msprop:Generator_UserColumnName="STK007_DegKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_DegVers" msprop:Generator_ColumnVarNameInTable="columnSTK007_DegVers" msprop:Generator_ColumnPropNameInRow="STK007_DegVers" msprop:Generator_ColumnPropNameInTable="STK007_DegVersColumn" msprop:Generator_UserColumnName="STK007_DegVers" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_SatisDoviz1" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDoviz1" msprop:Generator_ColumnPropNameInRow="STK007_SatisDoviz1" msprop:Generator_ColumnPropNameInTable="STK007_SatisDoviz1Column" msprop:Generator_UserColumnName="STK007_SatisDoviz1" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisDovizCinsi1" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDovizCinsi1" msprop:Generator_ColumnPropNameInRow="STK007_SatisDovizCinsi1" msprop:Generator_ColumnPropNameInTable="STK007_SatisDovizCinsi1Column" msprop:Generator_UserColumnName="STK007_SatisDovizCinsi1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_SatisDoviz2" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDoviz2" msprop:Generator_ColumnPropNameInRow="STK007_SatisDoviz2" msprop:Generator_ColumnPropNameInTable="STK007_SatisDoviz2Column" msprop:Generator_UserColumnName="STK007_SatisDoviz2" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisDovizCinsi2" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDovizCinsi2" msprop:Generator_ColumnPropNameInRow="STK007_SatisDovizCinsi2" msprop:Generator_ColumnPropNameInTable="STK007_SatisDovizCinsi2Column" msprop:Generator_UserColumnName="STK007_SatisDovizCinsi2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_SatisDoviz3" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDoviz3" msprop:Generator_ColumnPropNameInRow="STK007_SatisDoviz3" msprop:Generator_ColumnPropNameInTable="STK007_SatisDoviz3Column" msprop:Generator_UserColumnName="STK007_SatisDoviz3" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_SatisDovizCinsi3" msprop:Generator_ColumnVarNameInTable="columnSTK007_SatisDovizCinsi3" msprop:Generator_ColumnPropNameInRow="STK007_SatisDovizCinsi3" msprop:Generator_ColumnPropNameInTable="STK007_SatisDovizCinsi3Column" msprop:Generator_UserColumnName="STK007_SatisDovizCinsi3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_AlisDoviz1" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDoviz1" msprop:Generator_ColumnPropNameInRow="STK007_AlisDoviz1" msprop:Generator_ColumnPropNameInTable="STK007_AlisDoviz1Column" msprop:Generator_UserColumnName="STK007_AlisDoviz1" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisDovizCinsi1" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDovizCinsi1" msprop:Generator_ColumnPropNameInRow="STK007_AlisDovizCinsi1" msprop:Generator_ColumnPropNameInTable="STK007_AlisDovizCinsi1Column" msprop:Generator_UserColumnName="STK007_AlisDovizCinsi1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_AlisDoviz2" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDoviz2" msprop:Generator_ColumnPropNameInRow="STK007_AlisDoviz2" msprop:Generator_ColumnPropNameInTable="STK007_AlisDoviz2Column" msprop:Generator_UserColumnName="STK007_AlisDoviz2" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisDovizCinsi2" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDovizCinsi2" msprop:Generator_ColumnPropNameInRow="STK007_AlisDovizCinsi2" msprop:Generator_ColumnPropNameInTable="STK007_AlisDovizCinsi2Column" msprop:Generator_UserColumnName="STK007_AlisDovizCinsi2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_AlisDoviz3" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDoviz3" msprop:Generator_ColumnPropNameInRow="STK007_AlisDoviz3" msprop:Generator_ColumnPropNameInTable="STK007_AlisDoviz3Column" msprop:Generator_UserColumnName="STK007_AlisDoviz3" type="xs:decimal" default="0" minOccurs="0" />
+              <xs:element name="STK007_AlisDovizCinsi3" msprop:Generator_ColumnVarNameInTable="columnSTK007_AlisDovizCinsi3" msprop:Generator_ColumnPropNameInRow="STK007_AlisDovizCinsi3" msprop:Generator_ColumnPropNameInTable="STK007_AlisDovizCinsi3Column" msprop:Generator_UserColumnName="STK007_AlisDovizCinsi3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK007_ValorGun1" msprop:Generator_ColumnVarNameInTable="columnSTK007_ValorGun1" msprop:Generator_ColumnPropNameInRow="STK007_ValorGun1" msprop:Generator_ColumnPropNameInTable="STK007_ValorGun1Column" msprop:Generator_UserColumnName="STK007_ValorGun1" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_ValorGun2" msprop:Generator_ColumnVarNameInTable="columnSTK007_ValorGun2" msprop:Generator_ColumnPropNameInRow="STK007_ValorGun2" msprop:Generator_ColumnPropNameInTable="STK007_ValorGun2Column" msprop:Generator_UserColumnName="STK007_ValorGun2" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_ValorGun3" msprop:Generator_ColumnVarNameInTable="columnSTK007_ValorGun3" msprop:Generator_ColumnPropNameInRow="STK007_ValorGun3" msprop:Generator_ColumnPropNameInTable="STK007_ValorGun3Column" msprop:Generator_UserColumnName="STK007_ValorGun3" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_ValorGun4" msprop:Generator_ColumnVarNameInTable="columnSTK007_ValorGun4" msprop:Generator_ColumnPropNameInRow="STK007_ValorGun4" msprop:Generator_ColumnPropNameInTable="STK007_ValorGun4Column" msprop:Generator_UserColumnName="STK007_ValorGun4" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_ValorGun5" msprop:Generator_ColumnVarNameInTable="columnSTK007_ValorGun5" msprop:Generator_ColumnPropNameInRow="STK007_ValorGun5" msprop:Generator_ColumnPropNameInTable="STK007_ValorGun5Column" msprop:Generator_UserColumnName="STK007_ValorGun5" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_DvzValorGun1" msprop:Generator_ColumnVarNameInTable="columnSTK007_DvzValorGun1" msprop:Generator_ColumnPropNameInRow="STK007_DvzValorGun1" msprop:Generator_ColumnPropNameInTable="STK007_DvzValorGun1Column" msprop:Generator_UserColumnName="STK007_DvzValorGun1" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_DvzValorGun2" msprop:Generator_ColumnVarNameInTable="columnSTK007_DvzValorGun2" msprop:Generator_ColumnPropNameInRow="STK007_DvzValorGun2" msprop:Generator_ColumnPropNameInTable="STK007_DvzValorGun2Column" msprop:Generator_UserColumnName="STK007_DvzValorGun2" type="xs:short" minOccurs="0" />
+              <xs:element name="STK007_DvzValorGun3" msprop:Generator_ColumnVarNameInTable="columnSTK007_DvzValorGun3" msprop:Generator_ColumnPropNameInRow="STK007_DvzValorGun3" msprop:Generator_ColumnPropNameInTable="STK007_DvzValorGun3Column" msprop:Generator_UserColumnName="STK007_DvzValorGun3" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblListeTuru" msprop:Generator_TableClassName="tblListeTuruDataTable" msprop:Generator_TableVarName="tabletblListeTuru" msprop:Generator_TablePropName="tblListeTuru" msprop:Generator_RowDeletingName="tblListeTuruRowDeleting" msprop:Generator_RowChangingName="tblListeTuruRowChanging" msprop:Generator_RowEvHandlerName="tblListeTuruRowChangeEventHandler" msprop:Generator_RowDeletedName="tblListeTuruRowDeleted" msprop:Generator_UserTableName="tblListeTuru" msprop:Generator_RowChangedName="tblListeTuruRowChanged" msprop:Generator_RowEvArgName="tblListeTuruRowChangeEvent" msprop:Generator_RowClassName="tblListeTuruRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ListeTuru" msprop:Generator_ColumnVarNameInTable="columnListeTuru" msprop:Generator_ColumnPropNameInRow="ListeTuru" msprop:Generator_ColumnPropNameInTable="ListeTuruColumn" msprop:Generator_UserColumnName="ListeTuru" type="xs:int" minOccurs="0" />
+              <xs:element name="ListeTurAdi" msprop:Generator_ColumnVarNameInTable="columnListeTurAdi" msprop:Generator_ColumnPropNameInRow="ListeTurAdi" msprop:Generator_ColumnPropNameInTable="ListeTurAdiColumn" msprop:Generator_UserColumnName="ListeTurAdi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblCariKod" msprop:Generator_TableClassName="tblCariKodDataTable" msprop:Generator_TableVarName="tabletblCariKod" msprop:Generator_TablePropName="tblCariKod" msprop:Generator_RowDeletingName="tblCariKodRowDeleting" msprop:Generator_RowChangingName="tblCariKodRowChanging" msprop:Generator_RowEvHandlerName="tblCariKodRowChangeEventHandler" msprop:Generator_RowDeletedName="tblCariKodRowDeleted" msprop:Generator_UserTableName="tblCariKod" msprop:Generator_RowChangedName="tblCariKodRowChanged" msprop:Generator_RowEvArgName="tblCariKodRowChangeEvent" msprop:Generator_RowClassName="tblCariKodRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CariKod" msprop:Generator_ColumnVarNameInTable="columnCariKod" msprop:Generator_ColumnPropNameInRow="CariKod" msprop:Generator_ColumnPropNameInTable="CariKodColumn" msprop:Generator_UserColumnName="CariKod" type="xs:int" minOccurs="0" />
+              <xs:element name="CariKodAdi" msprop:Generator_ColumnVarNameInTable="columnCariKodAdi" msprop:Generator_ColumnPropNameInRow="CariKodAdi" msprop:Generator_ColumnPropNameInTable="CariKodAdiColumn" msprop:Generator_UserColumnName="CariKodAdi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblKayitliListeler" msprop:Generator_TableClassName="tblKayitliListelerDataTable" msprop:Generator_TableVarName="tabletblKayitliListeler" msprop:Generator_TablePropName="tblKayitliListeler" msprop:Generator_RowDeletingName="tblKayitliListelerRowDeleting" msprop:Generator_RowChangingName="tblKayitliListelerRowChanging" msprop:Generator_RowEvHandlerName="tblKayitliListelerRowChangeEventHandler" msprop:Generator_RowDeletedName="tblKayitliListelerRowDeleted" msprop:Generator_UserTableName="tblKayitliListeler" msprop:Generator_RowChangedName="tblKayitliListelerRowChanged" msprop:Generator_RowEvArgName="tblKayitliListelerRowChangeEvent" msprop:Generator_RowClassName="tblKayitliListelerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fiyat_x0020_Liste_x0020_No" msprop:Generator_ColumnVarNameInTable="columnFiyat_Liste_No" msprop:Generator_ColumnPropNameInRow="Fiyat_Liste_No" msprop:Generator_ColumnPropNameInTable="Fiyat_Liste_NoColumn" msprop:Generator_UserColumnName="Fiyat Liste No" type="xs:int" minOccurs="0" />
+              <xs:element name="Fiyat_x0020_Liste_x0020_Kodu" msprop:Generator_ColumnVarNameInTable="columnFiyat_Liste_Kodu" msprop:Generator_ColumnPropNameInRow="Fiyat_Liste_Kodu" msprop:Generator_ColumnPropNameInTable="Fiyat_Liste_KoduColumn" msprop:Generator_UserColumnName="Fiyat Liste Kodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fiyat_x0020_Liste_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnFiyat_Liste_Adı" msprop:Generator_ColumnPropNameInRow="Fiyat_Liste_Adı" msprop:Generator_ColumnPropNameInTable="Fiyat_Liste_AdıColumn" msprop:Generator_UserColumnName="Fiyat Liste Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Başlangıç_x0020_Tarihi" msprop:Generator_ColumnVarNameInTable="columnBaşlangıç_Tarihi" msprop:Generator_ColumnPropNameInRow="Başlangıç_Tarihi" msprop:Generator_ColumnPropNameInTable="Başlangıç_TarihiColumn" msprop:Generator_UserColumnName="Başlangıç Tarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Bitiş_x0020_Tarihi" msprop:Generator_ColumnVarNameInTable="columnBitiş_Tarihi" msprop:Generator_ColumnPropNameInRow="Bitiş_Tarihi" msprop:Generator_ColumnPropNameInTable="Bitiş_TarihiColumn" msprop:Generator_UserColumnName="Bitiş Tarihi" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="exceltablomuz" msprop:Generator_TableClassName="exceltablomuzDataTable" msprop:Generator_TableVarName="tableexceltablomuz" msprop:Generator_RowChangedName="exceltablomuzRowChanged" msprop:Generator_TablePropName="exceltablomuz" msprop:Generator_RowDeletingName="exceltablomuzRowDeleting" msprop:Generator_RowChangingName="exceltablomuzRowChanging" msprop:Generator_RowEvHandlerName="exceltablomuzRowChangeEventHandler" msprop:Generator_RowDeletedName="exceltablomuzRowDeleted" msprop:Generator_RowClassName="exceltablomuzRow" msprop:Generator_UserTableName="exceltablomuz" msprop:Generator_RowEvArgName="exceltablomuzRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblListeCariHesaplari" msprop:Generator_TableClassName="tblListeCariHesaplariDataTable" msprop:Generator_TableVarName="tabletblListeCariHesaplari" msprop:Generator_RowChangedName="tblListeCariHesaplariRowChanged" msprop:Generator_TablePropName="tblListeCariHesaplari" msprop:Generator_RowDeletingName="tblListeCariHesaplariRowDeleting" msprop:Generator_RowChangingName="tblListeCariHesaplariRowChanging" msprop:Generator_RowEvHandlerName="tblListeCariHesaplariRowChangeEventHandler" msprop:Generator_RowDeletedName="tblListeCariHesaplariRowDeleted" msprop:Generator_RowClassName="tblListeCariHesaplariRow" msprop:Generator_UserTableName="tblListeCariHesaplari" msprop:Generator_RowEvArgName="tblListeCariHesaplariRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Hesap_x0020_Kodu" msprop:Generator_ColumnVarNameInTable="columnHesap_Kodu" msprop:Generator_ColumnPropNameInRow="Hesap_Kodu" msprop:Generator_ColumnPropNameInTable="Hesap_KoduColumn" msprop:Generator_UserColumnName="Hesap Kodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ünvanı" msprop:Generator_ColumnVarNameInTable="columnÜnvanı" msprop:Generator_ColumnPropNameInRow="Ünvanı" msprop:Generator_ColumnPropNameInTable="ÜnvanıColumn" msprop:Generator_UserColumnName="Ünvanı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblListeMalKodlari" msprop:Generator_TableClassName="tblListeMalKodlariDataTable" msprop:Generator_TableVarName="tabletblListeMalKodlari" msprop:Generator_RowChangedName="tblListeMalKodlariRowChanged" msprop:Generator_TablePropName="tblListeMalKodlari" msprop:Generator_RowDeletingName="tblListeMalKodlariRowDeleting" msprop:Generator_RowChangingName="tblListeMalKodlariRowChanging" msprop:Generator_RowEvHandlerName="tblListeMalKodlariRowChangeEventHandler" msprop:Generator_RowDeletedName="tblListeMalKodlariRowDeleted" msprop:Generator_RowClassName="tblListeMalKodlariRow" msprop:Generator_UserTableName="tblListeMalKodlari" msprop:Generator_RowEvArgName="tblListeMalKodlariRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mal_x0020_Kodu" msprop:Generator_ColumnVarNameInTable="columnMal_Kodu" msprop:Generator_ColumnPropNameInRow="Mal_Kodu" msprop:Generator_ColumnPropNameInTable="Mal_KoduColumn" msprop:Generator_UserColumnName="Mal Kodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mal_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnMal_Adı" msprop:Generator_ColumnPropNameInRow="Mal_Adı" msprop:Generator_ColumnPropNameInTable="Mal_AdıColumn" msprop:Generator_UserColumnName="Mal Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblListeBirimFiyat" msprop:Generator_TableClassName="tblListeBirimFiyatDataTable" msprop:Generator_TableVarName="tabletblListeBirimFiyat" msprop:Generator_RowChangedName="tblListeBirimFiyatRowChanged" msprop:Generator_TablePropName="tblListeBirimFiyat" msprop:Generator_RowDeletingName="tblListeBirimFiyatRowDeleting" msprop:Generator_RowChangingName="tblListeBirimFiyatRowChanging" msprop:Generator_RowEvHandlerName="tblListeBirimFiyatRowChangeEventHandler" msprop:Generator_RowDeletedName="tblListeBirimFiyatRowDeleted" msprop:Generator_RowClassName="tblListeBirimFiyatRow" msprop:Generator_UserTableName="tblListeBirimFiyat" msprop:Generator_RowEvArgName="tblListeBirimFiyatRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BirimFiyati" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBirimFiyati" msprop:Generator_ColumnPropNameInRow="BirimFiyati" msprop:Generator_ColumnPropNameInTable="BirimFiyatiColumn" msprop:Generator_UserColumnName="BirimFiyati" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbliskontoListesi" msprop:Generator_TableClassName="tbliskontoListesiDataTable" msprop:Generator_TableVarName="tabletbliskontoListesi" msprop:Generator_TablePropName="tbliskontoListesi" msprop:Generator_RowDeletingName="tbliskontoListesiRowDeleting" msprop:Generator_RowChangingName="tbliskontoListesiRowChanging" msprop:Generator_RowEvHandlerName="tbliskontoListesiRowChangeEventHandler" msprop:Generator_RowDeletedName="tbliskontoListesiRowDeleted" msprop:Generator_UserTableName="tbliskontoListesi" msprop:Generator_RowChangedName="tbliskontoListesiRowChanged" msprop:Generator_RowEvArgName="tbliskontoListesiRowChangeEvent" msprop:Generator_RowClassName="tbliskontoListesiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STK008_MalKoduTipi" msprop:Generator_ColumnVarNameInTable="columnSTK008_MalKoduTipi" msprop:Generator_ColumnPropNameInRow="STK008_MalKoduTipi" msprop:Generator_ColumnPropNameInTable="STK008_MalKoduTipiColumn" msprop:Generator_UserColumnName="STK008_MalKoduTipi" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_MalKodu" msprop:Generator_ColumnVarNameInTable="columnSTK008_MalKodu" msprop:Generator_ColumnPropNameInRow="STK008_MalKodu" msprop:Generator_ColumnPropNameInTable="STK008_MalKoduColumn" msprop:Generator_UserColumnName="STK008_MalKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_BasDate" msprop:Generator_ColumnVarNameInTable="columnSTK008_BasDate" msprop:Generator_ColumnPropNameInRow="STK008_BasDate" msprop:Generator_ColumnPropNameInTable="STK008_BasDateColumn" msprop:Generator_UserColumnName="STK008_BasDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_BitDate" msprop:Generator_ColumnVarNameInTable="columnSTK008_BitDate" msprop:Generator_ColumnPropNameInRow="STK008_BitDate" msprop:Generator_ColumnPropNameInTable="STK008_BitDateColumn" msprop:Generator_UserColumnName="STK008_BitDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_IndTuru" msprop:Generator_ColumnVarNameInTable="columnSTK008_IndTuru" msprop:Generator_ColumnPropNameInRow="STK008_IndTuru" msprop:Generator_ColumnPropNameInTable="STK008_IndTuruColumn" msprop:Generator_UserColumnName="STK008_IndTuru" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_IndCHKodTipi" msprop:Generator_ColumnVarNameInTable="columnSTK008_IndCHKodTipi" msprop:Generator_ColumnPropNameInRow="STK008_IndCHKodTipi" msprop:Generator_ColumnPropNameInTable="STK008_IndCHKodTipiColumn" msprop:Generator_UserColumnName="STK008_IndCHKodTipi" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_IndCHKod" msprop:Generator_ColumnVarNameInTable="columnSTK008_IndCHKod" msprop:Generator_ColumnPropNameInRow="STK008_IndCHKod" msprop:Generator_ColumnPropNameInTable="STK008_IndCHKodColumn" msprop:Generator_UserColumnName="STK008_IndCHKod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_IndOrani" msprop:Generator_ColumnVarNameInTable="columnSTK008_IndOrani" msprop:Generator_ColumnPropNameInRow="STK008_IndOrani" msprop:Generator_ColumnPropNameInTable="STK008_IndOraniColumn" msprop:Generator_UserColumnName="STK008_IndOrani" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STK008_GirKaynakNo" msprop:Generator_ColumnVarNameInTable="columnSTK008_GirKaynakNo" msprop:Generator_ColumnPropNameInRow="STK008_GirKaynakNo" msprop:Generator_ColumnPropNameInTable="STK008_GirKaynakNoColumn" msprop:Generator_UserColumnName="STK008_GirKaynakNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_GirDate" msprop:Generator_ColumnVarNameInTable="columnSTK008_GirDate" msprop:Generator_ColumnPropNameInRow="STK008_GirDate" msprop:Generator_ColumnPropNameInTable="STK008_GirDateColumn" msprop:Generator_UserColumnName="STK008_GirDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_GirTime" msprop:Generator_ColumnVarNameInTable="columnSTK008_GirTime" msprop:Generator_ColumnPropNameInRow="STK008_GirTime" msprop:Generator_ColumnPropNameInTable="STK008_GirTimeColumn" msprop:Generator_UserColumnName="STK008_GirTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_GirKodu" msprop:Generator_ColumnVarNameInTable="columnSTK008_GirKodu" msprop:Generator_ColumnPropNameInRow="STK008_GirKodu" msprop:Generator_ColumnPropNameInTable="STK008_GirKoduColumn" msprop:Generator_UserColumnName="STK008_GirKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_GirVers" msprop:Generator_ColumnVarNameInTable="columnSTK008_GirVers" msprop:Generator_ColumnPropNameInRow="STK008_GirVers" msprop:Generator_ColumnPropNameInTable="STK008_GirVersColumn" msprop:Generator_UserColumnName="STK008_GirVers" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_DegKaynakNo" msprop:Generator_ColumnVarNameInTable="columnSTK008_DegKaynakNo" msprop:Generator_ColumnPropNameInRow="STK008_DegKaynakNo" msprop:Generator_ColumnPropNameInTable="STK008_DegKaynakNoColumn" msprop:Generator_UserColumnName="STK008_DegKaynakNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_DegDate" msprop:Generator_ColumnVarNameInTable="columnSTK008_DegDate" msprop:Generator_ColumnPropNameInRow="STK008_DegDate" msprop:Generator_ColumnPropNameInTable="STK008_DegDateColumn" msprop:Generator_UserColumnName="STK008_DegDate" type="xs:int" minOccurs="0" />
+              <xs:element name="STK008_DegTime" msprop:Generator_ColumnVarNameInTable="columnSTK008_DegTime" msprop:Generator_ColumnPropNameInRow="STK008_DegTime" msprop:Generator_ColumnPropNameInTable="STK008_DegTimeColumn" msprop:Generator_UserColumnName="STK008_DegTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_DegKodu" msprop:Generator_ColumnVarNameInTable="columnSTK008_DegKodu" msprop:Generator_ColumnPropNameInRow="STK008_DegKodu" msprop:Generator_ColumnPropNameInTable="STK008_DegKoduColumn" msprop:Generator_UserColumnName="STK008_DegKodu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STK008_DegVers" msprop:Generator_ColumnVarNameInTable="columnSTK008_DegVers" msprop:Generator_ColumnPropNameInRow="STK008_DegVers" msprop:Generator_ColumnPropNameInTable="STK008_DegVersColumn" msprop:Generator_UserColumnName="STK008_DegVers" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblIskontoTuru" msprop:Generator_TableClassName="tblIskontoTuruDataTable" msprop:Generator_TableVarName="tabletblIskontoTuru" msprop:Generator_TablePropName="tblIskontoTuru" msprop:Generator_RowDeletingName="tblIskontoTuruRowDeleting" msprop:Generator_RowChangingName="tblIskontoTuruRowChanging" msprop:Generator_RowEvHandlerName="tblIskontoTuruRowChangeEventHandler" msprop:Generator_RowDeletedName="tblIskontoTuruRowDeleted" msprop:Generator_UserTableName="tblIskontoTuru" msprop:Generator_RowChangedName="tblIskontoTuruRowChanged" msprop:Generator_RowEvArgName="tblIskontoTuruRowChangeEvent" msprop:Generator_RowClassName="tblIskontoTuruRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="iskontoTuru" msdata:Caption="Mal Kodu" msprop:Generator_ColumnVarNameInTable="columniskontoTuru" msprop:Generator_ColumnPropNameInRow="iskontoTuru" msprop:Generator_ColumnPropNameInTable="iskontoTuruColumn" msprop:Generator_UserColumnName="iskontoTuru" type="xs:string" minOccurs="0" />
+              <xs:element name="TurAdi" msdata:Caption="Grup Kodu" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="TurAdi" msprop:Generator_ColumnVarNameInTable="columnTurAdi" msprop:Generator_ColumnPropNameInTable="TurAdiColumn" msprop:Generator_UserColumnName="TurAdi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

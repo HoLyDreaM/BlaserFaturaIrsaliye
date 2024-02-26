@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/17/2013 23:32:24" ReportInfo.Modified="07/19/2013 00:51:19" ReportInfo.CreatorVersion="2013.1.9.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqo2BUTn0U6QfYORuiZDbsR1LitOxWk7SOsjwr00SRQdIOtpockCzC6DTIldyFrtUyqoHgZaVH3qooQWsYv5ZcMjl4NVtVC+siquNAgGoH9+IYbO3k/8bEKQeqzAOiM9E7Xp4IXzABi6k/ZJXyHe4onaay239tNY6hkd0u2IdY4MK5Ix7BpVjlAnzPrUM0Afh55Xilocsl96+xHkzIIbY8Gg==">
+      <TableDataSource Name="CariBilgiler" DataType="System.Int32" PropName="Table" Enabled="true" SelectCommand="SELECT c.CAR002_HesapKodu'Cari Hesap Kodu'&#13;&#10;      ,c.CAR002_Unvan1'Ünvan 1'&#13;&#10;      ,c.CAR002_Unvan2'Ünvan 2'&#13;&#10;      ,c.CAR002_Adres1'Adres 1'&#13;&#10;      ,c.CAR002_Adres2'Adres 2'&#13;&#10;      ,c.CAR002_Adres3'Adres 3'&#13;&#10;      ,c.CAR002_VergiDairesi'Vergi Dairesi'&#13;&#10;     ,c.CAR002_VergiHesapNo'Vergi No'&#13;&#10;      ,c.CAR002_Telefon2'Telefon 2'&#13;&#10;      ,c.CAR002_Telefon3'Telefon 3'&#13;&#10;      ,c.CAR002_Telefon4'Telefon 4'&#13;&#10;      ,c.CAR002_Fax'Fax'&#13;&#10;      ,c.CAR002_EMailAdresi'e-Mail'&#13;&#10;      ,c.CAR002_Yetkili1'Yetkili 1'&#13;&#10;      ,c.CAR002_YetkiliCep'Yetkili Cep'&#13;&#10;      ,c.CAR002_YetkiliCep2'Yetkili Cep2'&#13;&#10;      ,c.CAR002_TeslimYeri1'Teslim Yeri 1'&#13;&#10;      ,c.CAR002_TeslimYeri2'Teslim Yeri 2'&#13;&#10;      ,c.CAR002_TeslimAdresi1'Teslim Adresi 1'&#13;&#10;      ,c.CAR002_TeslimAdresi2'Teslim Adresi 2'&#13;&#10;      ,c.CAR002_TeslimAdresi3'Teslim Adresi 3'     &#13;&#10;FROM   CAR002 c&#13;&#10;WHERE  c.CAR002_HesapKodu = @hesapKodu" StoreData="true" TableData="PE5ld0RhdGFTZXQ+DQogIDx4czpzY2hlbWEgaWQ9Ik5ld0RhdGFTZXQiIHhtbG5zPSIiIHhtbG5zOnhzPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1tc2RhdGEiPg0KICAgIDx4czplbGVtZW50IG5hbWU9Ik5ld0RhdGFTZXQiIG1zZGF0YTpJc0RhdGFTZXQ9InRydWUiIG1zZGF0YTpVc2VDdXJyZW50TG9jYWxlPSJ0cnVlIj4NCiAgICAgIDx4czpjb21wbGV4VHlwZT4NCiAgICAgICAgPHhzOmNob2ljZSBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIj4NCiAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUYWJsZTEiPg0KICAgICAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ2FyaV94MDAyMF9IZXNhcF94MDAyMF9Lb2R1IiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSLDnG52YW5feDAwMjBfMSIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iw5xudmFuX3gwMDIwXzIiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkFkcmVzX3gwMDIwXzEiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkFkcmVzX3gwMDIwXzIiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkFkcmVzX3gwMDIwXzMiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlZlcmdpX3gwMDIwX0RhaXJlc2kiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlZlcmdpX3gwMDIwX05vIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUZWxlZm9uX3gwMDIwXzIiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRlbGVmb25feDAwMjBfMyIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVGVsZWZvbl94MDAyMF80IiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJGYXgiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9ImUtTWFpbCIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iWWV0a2lsaV94MDAyMF8xIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJZZXRraWxpX3gwMDIwX0NlcCIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iWWV0a2lsaV94MDAyMF9DZXAyIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUZXNsaW1feDAwMjBfWWVyaV94MDAyMF8xIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUZXNsaW1feDAwMjBfWWVyaV94MDAyMF8yIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUZXNsaW1feDAwMjBfQWRyZXNpX3gwMDIwXzEiIHR5cGU9InhzOnN0cmluZyIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRlc2xpbV94MDAyMF9BZHJlc2lfeDAwMjBfMiIgdHlwZT0ieHM6c3RyaW5nIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iVGVzbGltX3gwMDIwX0FkcmVzaV94MDAyMF8zIiB0eXBlPSJ4czpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAgICAgPC94czplbGVtZW50Pg0KICAgICAgICA8L3hzOmNob2ljZT4NCiAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgPC94czplbGVtZW50Pg0KICA8L3hzOnNjaGVtYT4NCiAgPFRhYmxlMT4NCiAgICA8Q2FyaV94MDAyMF9IZXNhcF94MDAyMF9Lb2R1Pk0wMTQ1PC9DYXJpX3gwMDIwX0hlc2FwX3gwMDIwX0tvZHU+DQogICAgPMOcbnZhbl94MDAyMF8xPkFSQVNMVUJFIEvEsE1ZQSBNQUsuIMSwVEhBTEFUPC/DnG52YW5feDAwMjBfMT4NCiAgICA8w5xudmFuX3gwMDIwXzI+xLBIUkFDQVQgU0FOLlZFIFTEsEMuTFRELsWeVMSwLjwvw5xudmFuX3gwMDIwXzI+DQogICAgPEFkcmVzX3gwMDIwXzE+xLBLxLBURUxMxLAgT1JHLiBTQU4uIELDlkxHLjwvQWRyZXNfeDAwMjBfMT4NCiAgICA8QWRyZXNfeDAwMjBfMj5TRUZBS8OWWSBTQU4uU8SwVC4zLEJMSy5OTzoxNjwvQWRyZXNfeDAwMjBfMj4NCiAgICA8QWRyZXNfeDAwMjBfMz7EsEvEsFRFTEzEsC1CQcWeQUvFnkVIxLBSIC8gxLBTVC48L0FkcmVzX3gwMDIwXzM+DQogICAgPFZlcmdpX3gwMDIwX0RhaXJlc2k+xLBLxLBURUxMxLA8L1ZlcmdpX3gwMDIwX0RhaXJlc2k+DQogICAgPFZlcmdpX3gwMDIwX05vPjA3MjA0NjA4MDc8L1ZlcmdpX3gwMDIwX05vPg0KICAgIDxUZWxlZm9uX3gwMDIwXzIgLz4NCiAgICA8VGVsZWZvbl94MDAyMF8zPjUzMjY3MTU5MjI8L1RlbGVmb25feDAwMjBfMz4NCiAgICA8VGVsZWZvbl94MDAyMF80IC8+DQogICAgPEZheD41NDkyOTE1PC9GYXg+DQogICAgPGUtTWFpbD5pbmZvQGFyYXNsdWJlLmNvbTwvZS1NYWlsPg0KICAgIDxZZXRraWxpX3gwMDIwXzE+Q2VsYWwgS2F5YTwvWWV0a2lsaV94MDAyMF8xPg0KICAgIDxZZXRraWxpX3gwMDIwX0NlcCAvPg0KICAgIDxZZXRraWxpX3gwMDIwX0NlcDIgLz4NCiAgICA8VGVzbGltX3gwMDIwX1llcmlfeDAwMjBfMSAvPg0KICAgIDxUZXNsaW1feDAwMjBfWWVyaV94MDAyMF8yIC8+DQogICAgPFRlc2xpbV94MDAyMF9BZHJlc2lfeDAwMjBfMSAvPg0KICAgIDxUZXNsaW1feDAwMjBfQWRyZXNpX3gwMDIwXzIgLz4NCiAgICA8VGVzbGltX3gwMDIwX0FkcmVzaV94MDAyMF8zIC8+DQogIDwvVGFibGUxPg0KPC9OZXdEYXRhU2V0Pg==">
+        <Column Name="Cari Hesap Kodu" DataType="System.String"/>
+        <Column Name="Ünvan 1" DataType="System.String"/>
+        <Column Name="Ünvan 2" DataType="System.String"/>
+        <Column Name="Adres 1" DataType="System.String"/>
+        <Column Name="Adres 2" DataType="System.String"/>
+        <Column Name="Adres 3" DataType="System.String"/>
+        <Column Name="Vergi Dairesi" DataType="System.String"/>
+        <Column Name="Telefon 2" DataType="System.String"/>
+        <Column Name="Telefon 3" DataType="System.String"/>
+        <Column Name="Telefon 4" DataType="System.String"/>
+        <Column Name="Fax" DataType="System.String"/>
+        <Column Name="e-Mail" DataType="System.String"/>
+        <Column Name="Yetkili 1" DataType="System.String"/>
+        <Column Name="Yetkili Cep" DataType="System.String"/>
+        <Column Name="Yetkili Cep2" DataType="System.String"/>
+        <Column Name="Teslim Yeri 1" DataType="System.String"/>
+        <Column Name="Teslim Yeri 2" DataType="System.String"/>
+        <Column Name="Teslim Adresi 1" DataType="System.String"/>
+        <Column Name="Teslim Adresi 2" DataType="System.String"/>
+        <Column Name="Teslim Adresi 3" DataType="System.String"/>
+        <Column Name="Vergi No" DataType="System.String"/>
+        <CommandParameter Name="hesapKodu" DataType="12" Size="40" DefaultValue="M0145"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" RawPaperSize="9" FirstPageSource="15" OtherPagesSource="15">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="198.45">
+      <TextObject Name="Text1" Left="37.8" Top="37.8" Width="236.25" Height="18.9" Text="[CariBilgiler.Ünvan 1]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text2" Left="37.8" Top="56.7" Width="236.25" Height="18.9" Text="[CariBilgiler.Ünvan 2]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text3" Left="37.8" Top="75.6" Width="236.25" Height="18.9" Text="[CariBilgiler.Adres 1]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text4" Left="37.8" Top="94.5" Width="236.25" Height="18.9" Text="[CariBilgiler.Adres 2]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text5" Left="37.8" Top="113.4" Width="236.25" Height="18.9" Text="[CariBilgiler.Adres 3]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text6" Left="283.5" Top="151.2" Width="170.1" Height="18.9" Text="[CariBilgiler.Vergi No]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text7" Left="85.05" Top="151.2" Width="151.2" Height="18.9" Text="[CariBilgiler.Vergi Dairesi]" Font="Tahoma, 9pt"/>
+      <TextObject Name="Text8" Left="37.8" Top="151.2" Width="47.25" Height="18.9" Text="V.D.:"/>
+      <TextObject Name="Text9" Left="236.25" Top="151.2" Width="75.6" Height="18.9" Text="V.NO.:"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="202.57" Width="718.2" Height="37.8"/>
+    <DataBand Name="Data1" Top="244.5" Width="718.2" Height="28.35"/>
+    <PageFooterBand Name="PageFooter1" Top="276.97" Width="718.2" Height="85.05"/>
+    <OverlayBand Name="Overlay1" Top="366.14" Width="718.2" Height="37.8"/>
+  </ReportPage>
+</Report>
